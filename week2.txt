@@ -1,10 +1,13 @@
 깃 허브는 윈도우 아닌 리눅스 기반이라 쉘(우린 bash쉘)이 필요함
 
-ls: 목록을 보여주는 리눅스 명령어 
+ls: 목록을 보여주는 리눅스 명령어(ls 옵션a: 숨김 파일까지)
 touch: 파일 생성 리눅스 명령어
-cat: 메모 내용 보여주는 리눅스 명령어
-cd: 체인지 디렉토리(상위 폴더로.) 리눅스 명령어
+cat: 내용 보여주는 리눅스 명령어
+cd: 체인지 디렉토리(..: 상위 폴더로.) 리눅스 명령어
 git init: 그 폴더 전반을 깃이 관리토록 만듦.
-git status: 깃이 관리하는지의 확인
+git status: 깃 상태 확인
 git add: 파일을 commit할 준비(깃이 관리, 일명 '장전')시키는 깃 명령어로, 특정 파일만 할 거면 파일명을, 폴더(전반)를 할 거면 .을 붙인다.
-git config --global user.email(혹은 name) "(메일)"(혹은 "(이름)"): 개인정보 입력(git config --list: 위에 거 확인됨.)
+git config --global user.email(혹은 name) "(메일)"(혹은 "(이름)"): commit을 위한 개인정보 입력(git config --list: commit된 것들 확인)
+git commit -m: commit과 남길 메시지
+git log
+git checkout: 해시 코드 또는 앞의 7자리를 받아 특정 폴더만 보여주도록 한다.
