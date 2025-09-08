@@ -1,3 +1,3 @@
-linux
-git
-order word
+linux: echo "(내용)" >> (파일명), rm (파일명)
+git: branch -M (브랜치명), remote add origin (깃 클립보드), push -u origin (브랜치명), push, remote -v, remote remove origin, 
+clone (깃 클립보드) /*위 clone 뒤에 " ." 붙이면 그 폴더에 복사됨.*/
