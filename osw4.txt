@@ -1,0 +1,3 @@
+커밋 제거: git reset hard head~1(최근 1개)
+
+--amend -m (새 커밋명): 커밋 이름 바꾸기
