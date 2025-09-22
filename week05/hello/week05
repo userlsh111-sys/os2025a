@@ -1,0 +1,17 @@
+Go 명령어
+-필수적인 mod 파일: go mod init (폴더명)
+-실행: go run (파일명).go
+-exe 생성: go build (go파일) 
+
+리눅스 명령어
+-cp (원본) (복사본)
+
+깃 명령어
+-git reset
+
+기타
+-exe 무시: gitignore(*.exe)
+
+김 교수님 왈
+-git clone (원격 주소)로 복구하면 된다.
+-시행착오를 많이 겪어야 함.
