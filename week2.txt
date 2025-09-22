@@ -3,3 +3,4 @@
 -ls, touch, cat, cd
 2. 깃 명령어
 -init, status, add, config --global user, commit -m, log, checkout
+--브랜치 이동시, check가 아닌 switch를 씀.
