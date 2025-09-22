@@ -3,5 +3,6 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("GOat hub.")
+	num := 7
+	fmt.Println("GOat hub.\n", num)
 }

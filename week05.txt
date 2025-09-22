@@ -8,9 +8,11 @@ Go 명령어
 
 깃 명령어
 -git reset
+-git merge (브랜치)
 
 기타
 -exe 무시: gitignore(*.exe)
+-package, import, func, print(ln과 f의 차이), ; 없음
 
 김 교수님 왈
 -git clone (원격 주소)로 복구하면 된다.
