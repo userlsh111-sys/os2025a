@@ -2,11 +2,18 @@ package main
 
 import (
 	"fmt"
-	"math"
-	"strings"
+	"reflect"
 )
 
 func main() {
-	fmt.Println(math.Ceil(2.71)) //Round: 반올림
-	fmt.Println(strings.Title("head first go"))
+	//var name float32
+	var name float64
+
+	//name = "InhaKim"
+
+	//var name = "InhaKim"
+	//name := "InhaKim"
+
+	name = 2.71
+	fmt.Println(name, reflect.TypeOf(name))
 }
