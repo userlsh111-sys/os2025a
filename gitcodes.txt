@@ -1,0 +1,27 @@
+1. git init: 깃 등록
+2. git add (파일): 커밋 장전(.으로 다 할 수도 / git status로 확인)
+3. 정보 등록: git config --global user.email "(메일)", git config --global user.name "(이름)"
+4. git commit -m "(커밋명)"
+5. 커밋 확인: git log, git log --oneline
+6. 커밋 돌아가기: git checkout (해시코드)
+7. 커밋명 변경: git commit --amend -m "(새 커밋명)"
+8. 커밋 제거: git reset, git reset --hard HEAD^num(뒤로 num만큼의 커밋 제거, 첫 커밋 불가, num은 자연수)
+9. 원격 첫 추가: git remote add (원격명) (URL)
+10. 원격 확인: git remote -v
+11. 원격 파일들 가져오기: git clone (URL), git clone -b (원격 브랜치명) --single-branch (URL)
+12. 로컬을 원격에 일치: git fetch (원격명) (브랜치명)
+13. 원격을 로컬에 일치: git push -u (원격명) (브랜치명)
+-강제로 할 거면 -u 대신 -f 
+14. 원격 삭제: git remote remove (원격명)
+
+<Linux 일부>
+1. 목록: ls(-a 붙이면 .git 등 숨겨진 파일도 보임.)
+2. 파일 만들기 
+-touch (파일)
+-echo "(내용)" >> (파일)
+-vi (파일): i 눌러서 편집 모드, 내용 쓰고  esc랑 :wq랑 enter 눌러서 끝냄.
+3. 내용 보기: cat (파일)
+4. cd: change directory(.은 하위, ..은 상위)
+
+
+*(파일): 확장자 포함
