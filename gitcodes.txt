@@ -13,6 +13,7 @@
 13. 원격을 로컬에 일치: git push -u (원격명) (브랜치명)
 -강제로 할 거면 -u 대신 -f 
 14. 원격 삭제: git remote remove (원격명)
+15. 원격명 변경: git remote rename (old) (new)
 
 <Linux 일부>
 1. 목록: ls(-a 붙이면 .git 등 숨겨진 파일도 보임.)
