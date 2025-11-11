@@ -1,8 +1,6 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
 	var width, height, area float64
@@ -10,12 +8,12 @@ func main() {
 	width = 4.2
 	height = 3.0
 	area = width * height
-	fmt.Println(area/10, "L needed")
+	fmt.Printf("%.2fL needed\n", area/10)
 
 	width = 5.2
 	height = 3.5
 	area = width * height
-	fmt.Println(area/10, "L needed")
+	fmt.Printf("%.2fL needed\n", area/10)
 
-	fmt.Println("====너무나 많은 자릿수====")
+	fmt.Println("====Prinf로 줄어든 자릿수====")
 }
