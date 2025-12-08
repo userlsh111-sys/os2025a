@@ -38,6 +38,7 @@ func main() {
 				break
 			} else if convedGuess < answer {
 				fmt.Println("안 작다고.... 비질게.(남은 기회:", 10-howmany, ")")
+				//printf로 변경 요망
 			} else if convedGuess > answer {
 				fmt.Println("'62'보다 크네!(남은 기회:", 10-howmany, ")")
 			} else {
