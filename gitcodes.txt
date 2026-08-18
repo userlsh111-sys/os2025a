@@ -14,6 +14,7 @@
 11. 원격의 브랜치(파일들) 가져오기
 -default만: git clone (URL)
 -git clone -b (원격 브랜치명) --single-branch (URL)
+-뒤에 (폴더명) 붙이면 폴더명 바꿀 수 있고, 'git mv (기존 폴더명) (새 폴더명)'도 됨.
 -모든 브랜치를 한꺼번에 가져올 순 없음. 
 12. 브랜치명 변경: git branch -m (새 브랜치명)
 13. 브랜치 삭제: git push (원격명) --delete (기존 브랜치명)
