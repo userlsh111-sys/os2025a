@@ -1,4 +1,5 @@
 1. git init: 깃 등록
+
 2. git add (파일): 커밋 장전(.으로 다 할 수도 / git status로 확인)
 3. 커밋'러' 등록: git config --global user.email "(메일)", git config --global user.name "(이름)"
 4. git commit -m "(커밋명)"
@@ -9,22 +10,34 @@
 -git reset --hard HEAD^num
 -뒤로 num까지의 커밋 제거, 최초 커밋은 불가
 -num은 자연수, hard로 파일도 그 커밋 전 상태로.
+
 9. 원격 첫 추가: git remote add (원격명) (URL)
 10. 원격 확인: git remote -v
+
 11. 원격의 브랜치(파일들) 가져오기
 -default만: git clone (URL)
 -git clone -b (원격 브랜치명) --single-branch (URL)
--뒤에 (폴더명) 붙이면 폴더명 바꿀 수 있고, 'git mv (기존 폴더명) (새 폴더명)'도 됨.
+-뒤에 (폴더명) 붙여서 폴더명 지정할 수 있음.
 -모든 브랜치를 한꺼번에 가져올 순 없음. 
-12. 브랜치명 변경: git branch -m (새 브랜치명)
-13. 브랜치 삭제: git push (원격명) --delete (기존 브랜치명)
-14. 깃으로 파일 삭제: git rm (지울 파일명.형식)
-15. 로컬을 원격에 일치: git fetch (원격명) (브랜치명)
-16. 원격을 로컬에 일치
+12. 원격명 변경: git remote rename (old) (new)
+13. 원격 삭제: git remote remove (원격명)
+
+14. 브랜치명 변경: git branch -m (새 브랜치명)
+15. 브랜치 삭제: git push (원격명) --delete (기존 브랜치명)
+
+16. 파일 혹은 폴더명 변경
+-git mv (기존 명칭) (새 명칭)
+-파일은 '.형식'도 포함할 것.
+17. 깃으로 삭제
+-파일: git rm (지울 파일명.형식)
+-폴더: git rm -r (지울 폴더명 / 강제시 앞에 -f도 띄어붙일 것)
+
+18. 로컬을 원격에 일치: git fetch (원격명) (브랜치명)
+19. 원격을 로컬에 일치
 -git push -u (원격명) (브랜치명)
 -강제로 할 거면 -u 대신 -f 
-17. 원격 삭제: git remote remove (원격명)
-18. 원격명 변경: git remote rename (old) (new)
+
+
 
 
 <Linux 일부>
@@ -35,6 +48,8 @@
 -vi (파일): i 눌러서 편집 모드, 내용 쓰고  esc랑 :wq랑 enter 눌러서 끝냄.
 3. 내용 보기: cat (파일)
 4. cd: change directory(.은 하위, ..은 상위)
+
+
 
 
 *(파일): 확장자 포함
