@@ -6,9 +6,10 @@
 5. 커밋 확인: git log, git log --oneline
 6. 커밋 돌아가기: git checkout (해시코드)
 7. 커밋명 변경: git commit --amend -m "(새 커밋명)"
-8. 커밋 제거
--git reset --hard HEAD^num
--뒤로 num까지의 커밋 제거, 최초 커밋은 불가
+8. 커밋 이동
+-git reset --hard 'HEAD~num'
+-뒤로 num까지의 커밋 제거
+-불가: 최초 커밋, ^(캐럿 기호 in 파워셸)
 -num은 자연수, hard로 파일도 그 커밋 전 상태로.
 
 9. 원격 첫 추가: git remote add (원격명) (URL)
