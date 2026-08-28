@@ -1,10 +1,10 @@
 1. git init: 깃 등록
+2. 커밋'러' 등록: git config --global user.email "(메일)", git config --global user.name "(이름)"
 
-2. git add (파일): 커밋 장전(.으로 다 할 수도 / git status로 확인)
-3. 커밋'러' 등록: git config --global user.email "(메일)", git config --global user.name "(이름)"
+3. git add (파일): 커밋 장전(.으로 다 할 수도 / git status로 확인)
 4. git commit -m "(커밋명)"
 5. 커밋 확인: git log, git log --oneline
-6. 커밋 돌아가기: git checkout (해시코드)
+6. 커밋 구경: git checkout (해시코드)
 7. 커밋명 변경: git commit --amend -m "(새 커밋명)"
 8. 커밋 이동
 -git reset --hard 'HEAD~num'
@@ -37,8 +37,24 @@
 18. 로컬을 원격에 일치: git pull (원격명) (브랜치명)
 19. 원격을 로컬에 일치
 -git push -u (원격명) (브랜치명)
--강제로 할 거면 -u 대신 -f
+-강제로 할 거면 뒤에 -f도.
 -한 번만 하면 git push까지만 하면 됨.
+
+
+번외(1). 기존 (init한)깃 삭제: git rm --cached (대상 폴더)
+-이거 없이 다른 init 폴더에 넣기만 하고 push하면, 깃허브에 subproject라고만 뜸. 
+
+번외(2). 원격 브랜치명 변경: 직접 바꿀 순 없음. 
+-1. 로컬의 clone 브랜치명 변경
+-2. 원격으로 push, 새 브랜치 생성
+-3. 기존 원격 브랜치 삭제
+
+번외(3). 프로젝트 후 내 리포짓으로 복사(파일, 역사)
+-1. git remote add로 팀과 나의 원격 추가
+-2. git fetch (팀 원격): 팀 리포짓의 파일 정보와 역사(커밋들) 가져옴. 소스 코드 가져오는 건 아님. 
+-3. git merge (팀 리포짓)/(그 중 한 브랜치) --allow-unrelated-histories: 에러 안 나도록 합침. 이제 보임. 
+--복잡하니 브랜치 단위로 최상위 폴더 만들 것. 
+-4. git push -u (내 원격) (해당 브랜치) -f
 
 
 
